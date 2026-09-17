@@ -4,3 +4,4 @@ target/
 .project
 .classpath
 *.war
+!deploy/OnlineBookstore.war

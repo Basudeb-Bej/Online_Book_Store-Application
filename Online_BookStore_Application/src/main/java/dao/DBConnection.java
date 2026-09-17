@@ -15,8 +15,10 @@ public class DBConnection {
 			String user = System.getProperty("bookstore.db.user",
 					System.getenv().getOrDefault("BOOKSTORE_DB_USER", "root"));
 
-			String password = System.getProperty("bookstore.db.password", System.getenv().get("BOOKSTORE_DB_PASSWORD"));
+			 String password = System.getProperty("bookstore.db.password",
+			 System.getenv().get("BOOKSTORE_DB_PASSWORD"));
 
+				
 			con = DriverManager.getConnection(url, user, password);
 
 			if (con != null) {
